@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Portfolio design showing off the skills I pertain" />
+  <meta name="keywords" content="web-design websites portfolio developer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Jeffrey VanHorn" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#424242">
+  <title>Jeffrey VanHorn</title>
+  <!-- Schema.org markup for Google+ -->
+  <!-- <meta itemprop="name" content="VanHorn Web Design">
+    <meta itemprop="description" content="Portfolio design showing off the skills I pertain">
+    <meta itemprop="image" content="./assets/images/logo/blue-logo.png"> -->
+
+  <!-- Twitter Card data -->
+  <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="https://codevh.com">
+    <meta name="twitter:title" content="VanHorn Web Design">
+    <meta name="twitter:description" content="Portfolio design showing off the skills I pertain">
+    <meta name="twitter:creator" content="Jeffrey VanHorn"> -->
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <!-- <meta name="twitter:image:src" content="./assets/images/logo/blue-logo.png"> -->
+  <!-- Open Graph data -->
+  <!-- <meta property="og:title" content="VanHorn Web Design" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:url" content="https://codevh.com" />
+    <meta property="og:image" content="./assets/images/logo/blue-logo.png" />
+    <meta property="og:description" content="Portfolio design showing off the skills I pertain" />
+    <meta property="og:site_name" content="vanHorn Web Design" /> -->
+
+  <!-- <link rel="shortcut icon" href="./assets/images/logos/blue-logo.png" type="image/x-icon"> -->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+
+  <!-- main css file -->
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <!-- text css file -->
+  <link rel="stylesheet" href="./assets/css/landingText.css" />
+  <!-- projects css file -->
+  <link rel="stylesheet" href="./assets/css/projects.css" />
+  <!-- timeline css file -->
+  <link rel="stylesheet" href="./assets/css/timeline.css" />
+  <!-- skill css file -->
+  <link rel="stylesheet" href="./assets/css/services.css" />
+  <!-- contact css file -->
+  <link rel="stylesheet" href="./assets/css/contact.css" />
+  <!-- navigation buttons css file -->
+  <link rel="stylesheet" href="./assets/css/navigationBtns.css" />
+  <!-- popup css file -->
+  <link rel="stylesheet" href="./assets/css/popup.css" />
+
+  <!-- Safari favicon -->
+  <!-- <link rel="apple-touch-icon" href="./assets/images/logo/blue-logo.png"> -->
+</head>
+
+<body>
+  <noscript>Please enable javascript to ensure this website runs smoothly</noscript>
+  <div class="transition_wrap">
+    <div id="progressBar"></div>
+    <div class="part_wrap">
+      <div class="div part-1 none"></div>
+      <div class="div part-2 none"></div>
+      <div class="div part-3 none"></div>
+      <div class="div part-4 none"></div>
+      <div class="div part-5 none"></div>
+    </div>
+    <div id="nav_wrap">
+      <div class="container">
+        <div class="row">
+          <button id="leftBtn" class="navigation_left">
+            <div id="leftBtnText" class="align-middle"></div>
+          </button>
+          <button id="rightBtn" class="navigation_right">
+            <div id="rightBtnText" class="align-middle"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- LANDING SECTION -->
+    <section class="active_slide" data-transition="split_diagonal_alt">
+      <nav>
+        <div class="theme-switch-wrapper">
+          <span id="popup" class="align-middle"> </span>
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </nav>
+      <h3 id="nameTitle">Jeffrey VanHorn</h3>
+      <h5 id="subTitle">Full Stack Dev</h5>
+    </section>
+    <!-- PROJECT SECTION -->
+    <section id="project_wrap" data-transition="split_diagonal_alt">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <button class="btn-2 searchBtns" id="allProjectsBtn" onclick="searchProjects('AllProjects');"><span
+              class="btn2-span">All Projects</span></button>
+          <button class="btn-2 searchBtns" id="htmlBtn" onclick="searchProjects('HTML5');"><span
+              class="btn2-span">HTML5</span></button>
+          <button class="btn-2 searchBtns" id="jsBtn" onclick="searchProjects('JavaScript');"><span
+              class="btn2-span">JavaScript</span></button>
+          <button class="btn-2 searchBtns" id="reactBtn" onclick="searchProjects('React.Js');"><span
+              class="btn2-span">React.Js</span></button>
+          <button class="btn-2 searchBtns" id="phpBtn" onclick="searchProjects('PHP');"><span
+              class="btn2-span">PHP</span></button>
+          <button class="btn-2 searchBtns" id="nodeBtn" onclick="searchProjects('Node.Js');"><span
+              class="btn2-span">Node.Js</span></button>
+          <button class="btn-2 searchBtns" id="cssBtn" onclick="searchProjects('CSS3');"><span
+              class="btn2-span">CSS3</span></button>
+          <button class="btn-2 searchBtns" id="bootstrapBtn" onclick="searchProjects('Bootstrap');"><span
+              class="btn2-span">Bootstrap</span></button>
+          <button class="btn-2 searchBtns" id="materializeBtn" onclick="searchProjects('Materialize');"><span
+              class="btn2-span">Materialize</span></button>
+          <button class="btn-2 searchBtns" id="materialUIBtn" onclick="searchProjects('MaterialUI');"><span
+              class="btn2-span">MaterialUI</span></button>
+          <button class="btn-2 searchBtns" id="mongoBtn" onclick="searchProjects('MongoDB');"><span
+              class="btn2-span">MongoDB</span></button>
+          <button class="btn-2 searchBtns" id="firebaseBtn" onclick="searchProjects('Firebase');"><span
+              class="btn2-span">Firebase</span></button>
+          <button class="btn-2 searchBtns" id="mysqlBtn" onclick="searchProjects('MySQL');"><span
+              class="btn2-span">MySQL</span></button>
+          <button class="btn-2 searchBtns" id="proWork" onclick="searchProjects(true);"><span
+              class="btn2-span">Professional Work</span></button>
+          <button class="btn-2 searchBtns" id="funProjects" onclick="searchProjects(false);"><span
+              class="btn2-span">Side
+              Projects</span></button>
+        </div>
+        <div class="row justify-content-center">
+          <p id="renderProjectNumber"></p>
+        </div>
+        <div id="renderProject" class="row justify-content-center"></div>
+      </div>
+    </section>
+    <!-- TIMELINE SECTION -->
+    <section id="timeline_wrap" data-transition="split_diagonal_alt">
+      <div id="timeline" class="timeline">
+        <div class="container">
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+              <div class="date">2011</div>
+              <p class="timelineText">
+                Began working as a crewman in construction with a hobby of building computers and studying programming.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+              <div class="date">2015</div>
+              <p class="timelineText">
+                Due to having a strong leadership mentality and taking initiative to get a job done right within given
+                deadlines. I was promoted from crewman to a supervisor position.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+              <div class="date">2017</div>
+              <p class="timelineText">
+                Still passionate about learning programming while working construction, I knew that programming was what
+                I wanted to do for a living and began saving money for tuition costs.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+              <div class="date">2018</div>
+              <p class="timelineText">
+                Enrolled in the University of Texas at Austin Coding Boot Camp and graduated at the end of the year
+                earning my title as a certified Full Stack Web Developer.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+              <div class="date">2019</div>
+              <p class="timelineText">
+                I've been working my dream job as a contractor/freelancer and looking for new full-time opportunities!
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-img"></div>
+            <div class="timeline-content">
+              <div class="date">2020</div>
+              <p class="timelineText" id="scrollthing">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa
+                ratione omnis alias cupiditate saepe atque totam aperiam sed nulla
+                voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias,
+                ullam.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT SECTION -->
+    <section id="contact_wrap" class="container-fluid" data-transition="split_diagonal_alt">
+      <div class="row d-flex justify-content-center">
+        <div class="iphone">
+          <img class="iphone-frame" alt="iphone frame" src="./assets/images/iphonex.png">
+          <div class="iphone-viewport">
+          </div>
+          <div id="contactMeText">
+            <h3>Contact Me!</h3>
+          </div>
+          <form id="contactForm" action="./php/mail.php" method="post" class="iphone-content">
+            <div class="form-group">
+              <label class="formLabel" for="name">Name</label>
+              <input id="name" name="name" type="text" />
+            </div>
+            <div class="form-group">
+              <label class="formLabel" for="email">Email</label>
+              <input id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label class="formLabel" for="message">Message</label>
+              <textarea id="message" name="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-1"><span class="btn-span">Submit</span></button>
+          </form>
+          <div id="icon_wrap">
+            <a class="icon" href="https://github.com/Jmichael96"><i class="fab fa-github fa-2x"></i></a>
+            <a class="icon" href="https://www.linkedin.com/in/jvh96/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a class="icon" href="https://www.facebook.com/JVHWebDevelopment/?modal=admin_todo_tour"><i
+                class="fab fa-facebook fa-2x"></i></a>
+          </div>
+          <div id="email_wrap">
+            <a id="email_text" onclick="showEmail();">Click to show email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SKILL SECTION -->
+    <section id="skill_wrap" data-transition="split_diagonal_alt">
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- first card -->
+          <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
+            <div class="serviceCard">
+              <div class="container">
+                <div class="row">
+                    <img src="./assets/images/laptop.jpeg" class="serviceImg" alt="computer" />
+                  <div class="col-12 lowerContent">
+                    <h4 class="serviceTitle">Web Development</h4>
+                    <hr class="serviceDivider" />
+                    <h6 class="subTitle">SEO</h6>
+                    <p class="serviceText">
+                      Search Engine Optimization is important for every website and business.
+                      Proper SEO will give your site a better ranking to appear in the higher search results of search
+                      engines;
+                      This will make it easier for users to locate your business online and potentially give you more
+                      customers.
+                    </p>
+                    <hr class="serviceDivider" />
+                    <h6 class="subTitle">Performance</h6>
+                    <p class="serviceText">
+                      Performance is extremely important for SEO, page speed and so much more.
+                      An average of 46% of online shoppers say they will never return to a slow website.
+                      I use multiple tools to test the performance of my work and ensure 100% satisfaction
+                      for every visiting user.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
+            <div class="serviceCard">
+              <div class="container">
+                <div class="row">
+                    <img src="./assets/images/devices.png" class="serviceImg" alt="computer" />
+                  <div class="col-12 lowerContent">
+                    <h4 class="serviceTitle">Web Design</h4>
+                    <hr class="serviceDivider" />
+                    <h6 class="subTitle">Mobile First</h6>
+                    <p class="serviceText">
+                      Mobile conversion rates are up to nearly 64% and getting higher every day.
+                      This means designing your website mobile first can deliver a more pleasurable experience for the
+                      user
+                      and lead to more profit for your business.
+                    </p>
+                    <hr class="serviceDivider" />
+                    <h6 class="subTitle">UI</h6>
+                    <p class="serviceText">
+                      The user interface of an application, mobile or desktop,
+                      can make or break your business. That's why I focus on making all my websites clean, easy to
+                      navigate
+                      and strait-forward for all users.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- jquery -->
+  <script src="./assets/libs/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+  <script type="text/javascript" src="./assets/js/timeline.js"></script>
+  <script type="text/javascript" src="./assets/js/projects.js"></script>
+  <script type="text/javascript" src="./assets/js/darkMode.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="././assets/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="././assets/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="././assets/js/mdb.min.js"></script>
+
+</body>
+
+</html>

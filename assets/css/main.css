@@ -1,0 +1,1079 @@
+:root {
+  --primary-color: #c2c2c2;
+  --light-blue: #00b4e6;
+  --dark-blue: #004761;
+  --scroll-bar-track: rgb(122, 122, 122);
+  --scroollbar: black;
+  --diamond-shutter: white;
+  --progress-bar: #004761;
+  --main-bg: url('../images/bg.png');
+  --slider-dot: white;
+  --slider-bg: #004761;
+  --mobile-bg: url('../images/bg-mobile.png');
+}
+
+/* dark theme css variables */
+
+[data-theme="dark"] {
+  --primary-color: #c2c2c2;
+  --light-blue: #00b4e6;
+  --dark-blue: #004761;
+  --scroll-bar-track: black;
+  --scroollbar: #a236c9;
+  --diamond-shutter: black;
+  --progress-bar: #a236c9;
+  --main-bg: url('../images/darkbg.png');
+  --slider-dot: white;
+  --slider-bg: #a236c9;
+  --slider-checked-bg: #a236c9;
+  --mobile-bg: url('../images/dark-mobilebg.png');
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  height: 100%;
+  background-color: var(--primary-color);
+  background-image: var(--main-bg);
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* scroll bar style */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  background-color: var(--scroll-bar-track);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--scroollbar);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--scroollbar);
+}
+/* scrollbar for top of window */
+
+#progressBar {
+  position: relative;
+  width: 0;
+  height: 3px;
+  background-color: var(--progress-bar);
+  -webkit-transition: width 1.5s ease-in-out;
+  -o-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
+}
+
+/* SLIDER TOGGLE SWITCH */
+
+/*slider switch css */
+
+.theme-switch-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 27px;
+  position: relative;
+  width: 54px;
+  margin: 3px 3px 0 20px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: var(--slider-bg);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .5s;
+}
+
+.slider:before {
+  background-color: var(--slider-dot);
+  bottom: 0px;
+  content: "";
+  height: 27px;
+  left: 0px;
+  position: absolute;
+  transition: .4s;
+  width: 27px;
+}
+
+input:checked+.slider {
+  background-color: var(--slider-checked-bg);
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 50px
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* diamond closing background */
+
+.part_wrap div {
+  width: 200px;
+  height: 200px;
+  background: var(--diamond-shutter);
+  position: absolute;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  z-index: 1;
+}
+
+.part_wrap .split_diagonal, .part_wrap .split_diagonal_alt, .part_wrap .split_diamond {
+  -webkit-animation: diamond .9s;
+  animation: diamond .9s;
+  -webkit-transform: scale(0) rotate(45deg);
+  transform: scale(0) rotate(45deg);
+}
+
+.part-1 {
+  left: -100px;
+  top: -100px;
+}
+
+.part-1.split_diagonal_alt {
+  display: none;
+}
+
+.part-2.split_diagonal_alt {
+  bottom: -100px;
+  left: -100px;
+}
+
+.part-2.split_diagonal {
+  display: none;
+}
+
+.part-3 {
+  top: -100px;
+  right: -100px;
+}
+
+.part-3.split_diagonal {
+  display: none;
+}
+
+.part-4 {
+  bottom: -100px;
+  right: -100px;
+}
+
+.part-4.split_diagonal_alt {
+  display: none;
+}
+
+.part-5 {
+  height: 100% !important;
+  display: none;
+  left: 0px;
+  -webkit-transform-origin: 0px 200px;
+  transform-origin: 0px 200px;
+}
+
+.part-6 {
+  height: 100% !important;
+  display: none;
+  right: -200px;
+  -webkit-transform-origin: 0px 200px;
+  transform-origin: 0px 200px;
+}
+
+@keyframes diamond {
+  0% {
+    -webkit-transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0);
+  }
+  50% {
+    -webkit-transform: rotate(45deg) scale(10);
+    transform: rotate(45deg) scale(10);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(0);
+    transform: rotate(45deg) scale(0);
+  }
+}
+
+.transition_wrap .active_slide {
+  display: block;
+}
+
+.transition_wrap section {
+  height: 100vh;
+  display: none;
+}
+
+.transition_wrap section:nth-of-type(1) {
+  background-color: var(--primary-color);
+  background-image: var(--main-bg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.transition_wrap section:nth-of-type(2) {
+  background: var(--primary-color);
+  background-image: var(--main-bg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.transition_wrap section:nth-of-type(3) {
+  background: var(--primary-color);
+  background-image: var(--main-bg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.transition_wrap section:nth-of-type(4) {
+  background: var(--primary-color);
+  background-image: var(--main-bg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.transition_wrap section:nth-of-type(5) {
+  background: var(--primary-color);
+  background-image: var(--main-bg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* iPad Pro 10.5 inch - 834 x 1112 [Portrait] */
+
+@media only screen and (device-width: 834px) and (device-height: 1112px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPad 1, 2, Air & Mini - 1024 x 768 [Portrait] */
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 11  [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 11  [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 2) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 11 Pro Max [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 11 Pro Max [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 11 Pro [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 11 Pro [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 6,7 & 8 Plus [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (orientation: Portrait) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 6,7 & 8 Plus [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 736px) and (orientation: Landscape)and (-webkit-device-pixel-ratio: 3) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 6,7 & 8 [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: Portrait)and (-webkit-device-pixel-ratio: 2) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 6,7 & 8 [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: Landscape) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone XS Max [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone XR [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone x [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone x [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 5, 5S, SE [Portrait] */
+
+@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: Portrait) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* iPhone 5, 5S, SE [Landscape] */
+
+@media only screen and (device-height: 320px) and (device-width: 568px) and (orientation: Landscape) {
+  .transition_wrap section:nth-of-type(1) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(2) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(3) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(4) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .transition_wrap section:nth-of-type(5) {
+    background-color: var(--primary-color);
+    background-image: var(--mobile-bg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

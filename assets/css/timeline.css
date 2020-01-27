@@ -1,0 +1,546 @@
+:root {
+  --center-line: #004761;
+  --timline-content-angle: #004761;
+  --timeline-content-border: #004761;
+  --center-dot-shadow: rgba(0, 0, 0, .3);
+  --center-dot-bg: #00b4e6;
+  --date-color: black;
+  --date-decor: #004761;
+  --content-bg: white;
+  --content-color: black;
+}
+
+/* dark theme css variables */
+
+[data-theme="dark"] {
+  --center-line: black;
+  --timline-content-angle: #a236c9;
+  --timeline-content-border: #a236c9;
+  --center-dot-shadow: rgba(0, 0, 0, .3);
+  --center-dot-bg: #a236c9;
+  --date-color: white;
+  --date-decor: #a236c9;
+  --content-bg: black;
+  --content-color: white;
+}
+
+.timeline {
+  position: relative;
+  overflow: auto;
+  padding: 20px 0;
+}
+
+/* center line */
+
+/* MUST USE MEDIA QUIERIES FOR THIS!!!!!!!!!!!!!! */
+
+.timeline::before {
+  content: '';
+  background: var(--center-line);
+  width: 5px;
+  height: 122%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* div surrounding timeline element */
+
+.timeline-item {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  float: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content .date {
+  right: auto;
+  left: 0;
+}
+
+/* angle left tick */
+
+.timeline-item:nth-child(even) .timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  left: -15px;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent var(--timline-content-angle) transparent transparent;
+}
+
+/* p tag text for timeline*/
+
+.timelineText {
+  padding: 20px 5px 15px 5px;
+  margin-top: 10px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.timeline-item::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* circle dot for each timeline */
+
+.timeline-img {
+  width: 30px;
+  height: 30px;
+  background: var(--center-dot-bg);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
+  margin-left: -15px;
+  box-shadow: 0 5px 12px var(--center-dot-shadow);
+}
+
+/* all the info inside each timeline */
+
+/* angel right tick */
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  width: 0;
+  height: 0;
+  top: 30px;
+  right: -15px;
+  border-width: 10px 0 10px 15px;
+  border-color: transparent transparent transparent var(--timline-content-angle);
+}
+
+/* date box */
+
+.date {
+  display: inline-block;
+  color: var(--date-color);
+  padding: 10px;
+  position: absolute;
+  font-weight: 500;
+  text-decoration: underline solid var(--date-decor);
+  top: 0;
+  right: 0;
+}
+
+.timeline-content {
+  position: relative;
+  width: 45%;
+  padding: 10px 30px;
+  border-radius: 3px;
+  background: var(--content-bg);
+  color: var(--content-color);
+  border: 2px solid var(--timeline-content-border);
+}
+
+.timeline-item:nth-child(1) {
+  -webkit-animation: fade .5s linear;
+  /* Safari 4+ */
+  -moz-animation: fade .5s linear;
+  /* Fx 5+ */
+  -o-animation: fade .5s linear;
+  /* Opera 12+ */
+  animation: fade .5s linear;
+}
+
+.timeline-item:nth-child(2) {
+  -webkit-animation: fade .7s linear;
+  /* Safari 4+ */
+  -moz-animation: fade .7s linear;
+  /* Fx 5+ */
+  -o-animation: fade .7s linear;
+  /* Opera 12+ */
+  animation: fade .7s linear;
+}
+
+.timeline-item:nth-child(3) {
+  -webkit-animation: fade .9s linear;
+  /* Safari 4+ */
+  -moz-animation: fade .9s linear;
+  /* Fx 5+ */
+  -o-animation: fade .9s linear;
+  /* Opera 12+ */
+  animation: fade .9s linear;
+}
+
+.timeline-item:nth-child(4) {
+  -webkit-animation: fade .8s linear;
+  /* Safari 4+ */
+  -moz-animation: fade .8s linear;
+  /* Fx 5+ */
+  -o-animation: fade .8s linear;
+  /* Opera 12+ */
+  animation: fade .8s linear;
+}
+
+.timeline-item:nth-child(5) {
+  -webkit-animation: fade 1s linear;
+  /* Safari 4+ */
+  -moz-animation: fade 1s linear;
+  /* Fx 5+ */
+  -o-animation: fade 1s linear;
+  /* Opera 12+ */
+  animation: fade 1s linear;
+}
+
+.timeline-item:nth-child(6) {
+  -webkit-animation: fade 1.2s linear;
+  /* Safari 4+ */
+  -moz-animation: fade 1.2s linear;
+  /* Fx 5+ */
+  -o-animation: fade 1.2s linear;
+  /* Opera 12+ */
+  animation: fade 1.2s linear;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .timeline::before {
+    left: 50px;
+  }
+  .timeline {
+    left: 50px;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 70px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+    border-width: 10px 15px 10px 0;
+    border-color: transparent #f5f5f5 transparent transparent;
+  }
+} */
+
+/* iPad Pro 10.5 inch - 834 x 1112 [Portrait] */
+
+@media only screen and (device-width: 834px) and (device-height: 1112px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .timeline::before {
+    content: '';
+    background: var(--center-line);
+    width: 5px;
+    height: 151%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* iPad Pro 10.5 inch - 1112 x 834 [Landscape] */
+
+@media only screen and (device-height: 834px) and (device-width: 1112px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .timeline::before {
+    content: '';
+    background: var(--center-line);
+    width: 5px;
+    height: 180%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* iPad 1, 2, Air & Mini - 1024 x 768 [Portrait] */
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
+  .timeline::before {
+    content: '';
+    background: var(--center-line);
+    width: 5px;
+    height: 160%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* iPad 1, 2, Air & Mini - 1024 x 768 [Landscape] - iPad Background */
+
+@media only screen and (device-height: 768px) and (device-width: 1024px) and (orientation: Landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .timeline::before {
+    content: '';
+    background: var(--center-line);
+    width: 5px;
+    height: 180%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* iPhone 11  [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline {
+    left: 0;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 20px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+  }
+  .timeline::before {
+    height: 170%;
+  }
+}
+
+/* iPhone 11  [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 2) {
+  .timeline::before {
+    height: 400%;
+  }
+}
+
+/* iPhone 11 Pro Max [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline {
+    left: 0;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 20px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+  }
+  .timeline::before {
+    height: 170%;
+  }
+}
+
+/* iPhone 11 Pro Max [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+  .timeline::before {
+    height: 400%;
+  }
+}
+
+/* iPhone 11 Pro [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline {
+    left: 0;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 20px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+  }
+  .timeline::before {
+    height: 190%;
+  }
+}
+
+/* iPhone 11 Pro [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+  .timeline::before {
+    height: 430%;
+  }
+}
+
+/* iPhone 6,7 & 8 Plus [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (orientation: Portrait) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline {
+    left: 0;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 20px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+  }
+  .timeline::before {
+    height: 200%;
+  }
+}
+
+/* iPhone 6,7 & 8 Plus [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 736px) and (orientation: Landscape)and (-webkit-device-pixel-ratio: 3) {
+  .timeline::before {
+    height: 490%;
+  }
+}
+
+/* iPhone 6,7 & 8 [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: Portrait)and (-webkit-device-pixel-ratio: 2) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline {
+    left: 0;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 20px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+  }
+  .timeline::before {
+    height: 240%;
+  }
+}
+
+/* iPhone 6,7 & 8 [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: Landscape) {
+  .timeline::before {
+    height: 560%;
+  }
+}
+
+/* iPhone 5, 5S, SE [Portrait] */
+
+@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: Portrait) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline {
+    left: 0;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 20px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+  }
+  .timeline::before {
+    height: 320%;
+  }
+}
+
+/* iPhone 5, 5S, SE [Landscape] */
+
+@media only screen and (device-height: 320px) and (device-width: 568px) and (orientation: Landscape) {
+  .timeline::before {
+    left: 10px;
+  }
+  .timeline {
+    left: 0;
+  }
+  .timeline .timeline-content {
+    max-width: 100%;
+    width: auto;
+    margin-left: 20px;
+  }
+  .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: none;
+  }
+  .timeline .timeline-item:nth-child(odd) .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 30px;
+    left: -15px;
+  }
+  .timeline::before {
+    height: 400%;
+  }
+}

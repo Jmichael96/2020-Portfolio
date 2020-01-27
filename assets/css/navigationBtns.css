@@ -1,0 +1,286 @@
+:root {
+    --btn-bg: #004761;
+    --btn-border: #004761;
+    --btn-color: white;
+}
+
+/* dark theme css variables */
+
+[data-theme="dark"] {
+    --btn-bg: rgba(255, 255, 255, 0);
+    --btn-border: #a236c9;
+    --btn-color: white;
+}
+
+#nav_wrap {
+    position: fixed;
+    top: 92%;
+    left: calc(-58vw + 100%);
+    right: calc(-58vw + 100%);
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 5;
+    width: 138px;
+}
+
+/* left navigation button */
+
+#leftBtn {
+    margin: 2px;
+    z-index: 2;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border: 1px solid var(--btn-border);
+    border-radius: 2px;
+    font-weight: 600;
+    width: 100%;
+    ;
+    outline: none;
+}
+
+#leftBtn:hover {
+    animation: shakey 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    backface-visibility: hidden;
+    transform-origin: top bottom;
+}
+
+#leftImage {
+    height: 28px;
+    transform: rotate(-90deg);
+}
+
+/* right navigation button */
+
+#rightBtn {
+    margin: 2px;
+    z-index: 2;
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border: 1px solid var(--btn-border);
+    border-radius: 2px;
+    font-weight: 600;
+    width: 100%;
+    outline: none;
+}
+
+#rightBtn:hover {
+    animation: shakey 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    backface-visibility: hidden;
+    transform-origin: top bottom;
+}
+
+#rightImage {
+    height: 28px;
+    transform: rotate(90deg);
+}
+
+/* animation for navigation buttons */
+@-webkit-keyframes shakey {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(5deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    45% {
+        transform: rotate(4deg);
+    }
+    60% {
+        transform: rotate(-4deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    85% {
+        transform: rotate(-2deg);
+    }
+    92% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+@keyframes shakey {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(5deg);
+    }
+    30% {
+        transform: rotate(-5deg);
+    }
+    45% {
+        transform: rotate(4deg);
+    }
+    60% {
+        transform: rotate(-4deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    85% {
+        transform: rotate(-2deg);
+    }
+    92% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+/* iPhone 11  [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+    #nav_wrap {
+        left: calc(-58vw + 93%);
+        right: calc(-58vw + 93%);
+    }
+}
+
+/* iPhone 11  [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 2) {
+    #nav_wrap {
+        left: calc(-58vw + 93%);
+        right: calc(-58vw + 93%);
+    }
+}
+
+/* iPhone 11 Pro Max [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #nav_wrap {
+        left: calc(-58vw + 92%);
+        right: calc(-58vw + 92%);
+    }
+}
+
+/* iPhone 11 Pro Max [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+    #nav_wrap {
+        top: 82%;
+        left: calc(-58vw + 92%);
+        right: calc(-58vw + 92%);
+    }
+}
+
+/* iPhone 11 Pro [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #nav_wrap {
+        left: calc(-58vw + 91%);
+        right: calc(-58vw + 91%);
+    }
+}
+
+/* iPhone 11 Pro [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+    #nav_wrap {
+        top: 82%;
+        left: calc(-58vw + 91%);
+        right: calc(-58vw + 91%);
+    }
+}
+
+/* iPhone 6,7 & 8 Plus [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (orientation: Portrait) {
+    #nav_wrap {
+        top: 90%;
+        left: calc(-58vw + 91%);
+        right: calc(-58vw + 91%);
+    }
+}
+
+/* iPhone 6,7 & 8 Plus [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 736px) and (orientation: Landscape)and (-webkit-device-pixel-ratio: 3) {
+    #nav_wrap {
+        top: 82%;
+        left: calc(-58vw + 91%);
+        right: calc(-58vw + 91%);
+    }
+}
+
+/* iPhone 6,7 & 8 [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: Portrait)and (-webkit-device-pixel-ratio: 2) {
+    #nav_wrap {
+        top: 88%;
+        left: calc(-58vw + 91%);
+        right: calc(-58vw + 91%);
+    }
+}
+
+/* iPhone 6,7 & 8 [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: Landscape) {
+    #nav_wrap {
+        top: 82%;
+        left: calc(-58vw + 91%);
+        right: calc(-58vw + 91%);
+    }
+}
+
+
+/* iPhone XR [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+    #nav_wrap {
+        top: 91%;
+        left: calc(-58vw + 90%);
+        right: calc(-58vw + 90%);
+    }
+}
+/* iPhone XR [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+    #nav_wrap {
+        top: 80%;
+        left: calc(-58vw + 90%);
+        right: calc(-58vw + 90%);
+    }
+}
+
+/* iPhone x [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #nav_wrap {
+        top: 91%;
+        left: calc(-58vw + 90%);
+        right: calc(-58vw + 90%);
+    }
+}
+
+/* iPhone x [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {}
+
+/* iPhone 5, 5S, SE [Portrait] */
+
+@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: Portrait) {
+    #nav_wrap {
+        top: 88%;
+        left: calc(-58vw + 89%);
+        right: calc(-58vw + 89%);
+    }
+}
+
+/* iPhone 5, 5S, SE [Landscape] */
+
+@media only screen and (device-height: 320px) and (device-width: 568px) and (orientation: Landscape) {
+    #nav_wrap {
+        top: 80%;
+        left: calc(-58vw + 89%);
+        right: calc(-58vw + 89%);
+    }
+}

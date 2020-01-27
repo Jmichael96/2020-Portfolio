@@ -1,0 +1,211 @@
+:root {
+    --name-color: rgba(0, 0, 0, 0);
+    --solid-color: black;
+    --gradient-bg: #808080;
+}
+
+/* dark theme css variables */
+
+[data-theme="dark"] {
+    --name-color: rgba(0, 0, 0, 0);
+    --solid-color: white;
+    --gradient-bg: #292929;
+}
+
+/* my name in landing page */
+
+#nameTitle {
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 80px;
+    margin: 350px 0 0 0;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--gradient-bg), var(--solid-color), var(--gradient-bg));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: var(--name-color)
+}
+
+/* 'full stack dev' text under jeffrey vanhorn */
+
+#subTitle {
+    font-size: 25px;
+    color: var(--solid-color);
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+
+/* iPad 1, 2, Air & Mini - 1024 x 768 [Portrait] */
+
+@media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
+    #nameTitle {
+        font-size: 70px;
+        margin: 350px 0 0 0;
+    }
+}
+
+/* iPad 1, 2, Air & Mini - 1024 x 768 [Landscape] - iPad Background */
+
+@media only screen and (device-height: 768px) and (device-width: 1024px) and (orientation: Landscape) and (-webkit-min-device-pixel-ratio: 1) {
+    #nameTitle {
+        font-size: 70px;
+        margin: 250px 0 0 0;
+    }
+}
+
+/* iPhone 11  [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+    #nameTitle {
+        font-size: 70px;
+        margin: 250px 0 0 0;
+    }
+}
+
+/* iPhone 11  [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 2) {
+    #nameTitle {
+        font-size: 70px;
+        margin: 50px 0 0 0;
+    }
+}
+
+/* iPhone 11 Pro Max [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #nameTitle {
+        font-size: 70px;
+        margin: 250px 0 0 0;
+    }
+}
+
+/* iPhone 11 Pro Max [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+    #nameTitle {
+        font-size: 70px;
+        margin: 50px 0 0 0;
+    }
+}
+
+/* iPhone 11 Pro [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #nameTitle {
+        font-size: 70px;
+        margin: 250px 0 0 0;
+    }
+}
+
+/* iPhone 11 Pro [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+    #nameTitle {
+        font-size: 70px;
+        margin: 50px 0 0 0;
+    }
+}
+
+/* iPhone 6,7 & 8 Plus [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (orientation: Portrait) {
+    #nameTitle {
+        font-size: 60px;
+        margin: 250px 0 0 0;
+    }
+}
+
+/* iPhone 6,7 & 8 Plus [Landscape] */
+
+@media only screen and (device-height: 414px) and (device-width: 736px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+    #nameTitle {
+        font-size: 60px;
+        margin: 150px 0 0 0;
+    }
+}
+
+/* iPhone 6,7 & 8 [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+    #nameTitle {
+        font-size: 60px;
+        margin: 150px 0 0 0;
+    }
+}
+
+/* iPhone 6,7 & 8 [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: Landscape) {
+    #nameTitle {
+        font-size: 60px;
+        margin: 50px 0 0 0;
+    }
+}
+
+/* iPhone XS Max [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #nameTitle {
+        font-size: 60px;
+        margin: 200px 0 0 0;
+    }
+}
+
+/* iPhone XR [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
+    #nameTitle {
+        font-size: 60px;
+        margin: 200px 0 0 0;
+    }
+}
+
+/* iPhone x [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #nameTitle {
+        font-size: 60px;
+        margin: 200px 0 0 0;
+    }
+}
+
+/* iPhone x [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
+    #nameTitle {
+        font-size: 60px;
+        margin: 50px 0 0 0;
+    }
+}
+
+/* iPhone 5, 5S, SE [Portrait] */
+
+@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: Portrait) {
+    #nameTitle {
+        font-size: 50px;
+        margin: 100px 0 0 0;
+    }
+}
+
+/* iPhone 5, 5S, SE [Landscape] */
+
+@media only screen and (device-height: 320px) and (device-width: 568px) and (orientation: Landscape) {
+    #nameTitle {
+        font-size: 50px;
+        margin: 50px 0 0 0;
+    }
+}

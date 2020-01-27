@@ -1,0 +1,257 @@
+:root {
+    --primary-color: #c2c2c2;
+    --light-blue: #00b4e6;
+    --dark-blue: #004761;
+    --iphone-bg: #004761;
+    --contact-title: white;
+    --labels: white;
+    --input-bg: white;
+    --input-border: #004761;
+    --input-focus: #00b4e6;
+    --phone-number: white;
+    --icon-color: #00b4e6;
+    --icon-hover: white;
+}
+
+/* dark theme css variables */
+
+[data-theme="dark"] {
+    --primary-color: #c2c2c2;
+    --light-blue: #00b4e6;
+    --dark-blue: #004761;
+    --iphone-bg: black;
+    --contact-title: white;
+    --labels: white;
+    --input-bg: white;
+    --input-border: #004761;
+    --input-focus: #00b4e6;
+    --phone-number: white;
+    --icon-color: #a236c9;
+    --icon-hover: white;
+}
+
+/* section wrapping contact */
+
+#contact_wrap {
+    position: relative;
+    overflow: auto;
+}
+
+/* iphone  */
+
+.iphone {
+    height: 812px;
+    -webkit-transform: translateY(3%);
+    transform: translateY(3%);
+}
+
+/* iphone image div */
+
+.iphone-frame {
+    height: 100%;
+    background-size: 100%;
+    z-index: 1;
+}
+
+.iphone-viewport {
+    position: absolute;
+    width: 65%;
+    height: 92%;
+    top: 2%;
+    left: 18%;
+    overflow: hidden;
+    background: var(--iphone-bg);
+    padding: 5px;
+    z-index: -1;
+}
+
+/* 'contact me!' text on top of iphone */
+
+#contactMeText {
+    position: absolute;
+    top: 13%;
+    left: 19%;
+    width: 337px;
+    text-align: center;
+}
+
+#contactMeText>h3 {
+    color: var(--contact-title);
+}
+
+/* labels for inputs */
+
+label {
+    color: var(--labels);
+}
+
+/* contact form inputs and button */
+
+#contactForm {
+    top: 23%;
+    left: 23%;
+    position: absolute;
+}
+
+/* inputs */
+
+#name {
+    display: block;
+    background-color: var(--input-bg);
+    width: 293px;
+    border-radius: 3px;
+    border: 2px solid var(--input-border);
+}
+
+#name:focus {
+    border: 2px solid var(--input-focus);
+}
+
+#email {
+    display: block;
+    background-color: var(--input-bg);
+    width: 293px;
+    border-radius: 3px;
+    border: 2px solid var(--input-border);
+}
+
+#email:focus {
+    border: 2px solid var(--input-focus);
+}
+
+#message {
+    display: block;
+    background-color: var(--input-bg);
+    width: 293px;
+    border-radius: 3px;
+    border: 2px solid var(--input-border);
+}
+
+#message:focus {
+    border: 2px solid var(--input-focus);
+}
+
+/* send me a message text under iphone */
+
+.contactMe {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+/* input labels */
+
+.formLabel {
+    text-align: left;
+}
+
+#phoneNumber {
+    color: var(--phone-number);
+    text-align: center;
+}
+
+/* wrap for icons */
+
+#icon_wrap {
+    top: 66%;
+    left: 28%;
+    position: absolute;
+}
+
+/* outer style of icon */
+
+.icon {
+    margin-left: 35px;
+    color: var(--icon-color);
+    -webkit-transition: color 0.5s ease-out;
+    -o-transition: color 0.5s ease-out;
+    transition: color 0.5s ease-out;
+    outline: none;
+}
+
+.icon:hover {
+    color: var(--icon-hover);
+}
+
+/* email text wrap */
+
+#email_wrap {
+    position: absolute;
+    top: 79%;
+    left: 19%;
+    width: 337px;
+    text-align: center;
+}
+
+#email_text {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--contact-title);
+}
+
+/* iPhone 6,7 & 8 Plus [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (orientation: Portrait) {
+    /* section wrapping contact */
+    #contact_wrap {
+        position: relative;
+        overflow: hidden;
+    }
+    /* email text wrap */
+    #email_wrap {
+        position: absolute;
+        top: 72%;
+        left: 19%;
+        width: 337px;
+        text-align: center;
+    }
+}
+
+/* iPhone 6,7 & 8 [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: Portrait)and (-webkit-device-pixel-ratio: 2) {
+    /* section wrapping contact */
+    #contact_wrap {
+        position: relative;
+        overflow: hidden;
+    }
+    /* email text wrap */
+    #email_wrap {
+        position: absolute;
+        top: 72%;
+        left: 19%;
+        width: 337px;
+        text-align: center;
+    }
+}
+
+/* iPhone 6,7 & 8 [Landscape] */
+
+@media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: Landscape) {}
+
+/* iPhone XS Max [Portrait] */
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #contact_wrap {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+/* iPhone x [Portrait] */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    #contact_wrap {
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+/* iPhone 5, 5S, SE [Portrait] */
+
+@media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: Portrait) {
+    #contact_wrap {
+        position: relative;
+        overflow: hidden;
+    }
+}

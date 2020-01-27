@@ -1,0 +1,74 @@
+#popup {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 4px;
+    color: black;
+    text-align: center;
+    transition: opacity .3s ease-in-out;
+    -webkit-animation: backnforth 1s alternate;
+    animation: backnforth 1s alternate;
+    transform-origin: 50% 50%;
+    animation-delay: 1.5s
+}
+
+
+@-webkit-keyframes backnforth {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(6deg);
+    }
+    30% {
+        transform: rotate(-6deg);
+    }
+    45% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    85% {
+        transform: rotate(-2deg);
+    }
+    92% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes backnforth {
+    0% {
+        transform: rotate(0);
+    }
+    15% {
+        transform: rotate(6deg);
+    }
+    30% {
+        transform: rotate(-6deg);
+    }
+    45% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    85% {
+        transform: rotate(-2deg);
+    }
+    92% {
+        transform: rotate(1deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
