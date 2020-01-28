@@ -191,3 +191,13 @@ function showEmail() {
   let email = document.getElementById('email_text');
   email.innerHTML = '<a id="email_text" target="_blank" href="mailto:vh.webdesign19@gmail.com">vh.webdesign19@gmail.com</a>';
 };
+
+function updateSVG() {
+  let svg = document.getElementById('svg');
+  let innerWidth = window.innerWidth;
+  let innerHeight = window.innerHeight;
+
+  svg.setAttribute('viewBox', `0 0 ${innerWidth} 300`);
+  console.log('svg set at ' + innerWidth)
+}
+// updateSVG();
