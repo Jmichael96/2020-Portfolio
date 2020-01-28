@@ -192,19 +192,22 @@ function showEmail() {
   email.innerHTML = '<a id="email_text" target="_blank" href="mailto:vh.webdesign19@gmail.com">vh.webdesign19@gmail.com</a>';
 };
 
-function updateSVG() {
+function setSVG() {
+  let windowWidth = window.innerWidth;
   let svg = document.getElementById('svg');
-  let innerWidth = window.innerWidth * 2 ;
 
-  svg.setAttribute('viewBox', `0 0 ${innerWidth} 300`);
-  console.log('svg set at ' + innerWidth)
+  if (windowWidth === 1920) {
+    svg.setAttribute('viewBox', '0 0 1920 300')
+  }
+  else if (windowWidth === 1600) {
+    svg.setAttribute('viewBox', '0 0 1920 300')
+  }
+  else if (windowWidth === 768) {
+    svg.setAttribute('viewBox', '0 0 1320 300')
+  }
+  else if (windowWidth < 768) {
+    svg.setAttribute('viewBox', '0 0 1320 300')
+  }
 }
-updateSVG();
 
-// if screen changes
-window.addEventListener('resize', function () {
-  let screenWidth = window.innerWidth;
-  let screenHeight = window.innerHeight;
-  document.getElementById('timeline').style.setProperty('width', `${screenWidth}px`);
-  document.getElementById('timeline').style.setProperty('height', `${screenHeight}px`);
-}, true);
+setSVG();
