@@ -34,7 +34,6 @@ body {
   overflow: hidden;
   padding: 0;
   height: 100%;
-  background-color: var(--primary-color);
   background-image: var(--main-bg);
   background-position: center;
   background-attachment: fixed;
@@ -280,7 +279,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 834px) and (device-height: 1112px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -288,7 +286,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -296,7 +293,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -304,7 +300,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -312,7 +307,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -325,7 +319,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 768px) and (device-height: 1024px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -333,7 +326,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -341,7 +333,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -349,7 +340,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -357,7 +347,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -370,7 +359,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -378,7 +366,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -386,7 +373,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -394,7 +380,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -402,7 +387,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -415,7 +399,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 2) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -423,7 +406,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -431,7 +413,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -439,7 +420,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -447,7 +427,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -460,7 +439,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -468,7 +446,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -476,7 +453,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -484,7 +460,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -492,7 +467,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -505,7 +479,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -513,7 +486,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -521,7 +493,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -529,7 +500,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -537,7 +507,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -550,7 +519,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -558,7 +526,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -566,7 +533,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -574,7 +540,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -582,7 +547,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -595,7 +559,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -603,7 +566,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -611,7 +573,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -619,7 +580,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -627,7 +587,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -640,7 +599,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 414px) and (device-height: 736px) and (orientation: Portrait) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -648,7 +606,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -656,7 +613,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -664,7 +620,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -672,7 +627,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -685,7 +639,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-height: 414px) and (device-width: 736px) and (orientation: Landscape)and (-webkit-device-pixel-ratio: 3) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -693,7 +646,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -701,7 +653,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -709,7 +660,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -717,7 +667,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -730,7 +679,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 375px) and (device-height: 667px) and (orientation: Portrait)and (-webkit-device-pixel-ratio: 2) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -738,7 +686,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -746,7 +693,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -754,7 +700,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -762,7 +707,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -775,7 +719,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-height: 375px) and (device-width: 667px) and (orientation: Landscape) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -783,7 +726,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -791,7 +733,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -799,7 +740,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -807,7 +747,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -820,7 +759,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -828,7 +766,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -836,7 +773,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -844,7 +780,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -852,7 +787,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -865,7 +799,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -873,7 +806,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -881,7 +813,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -889,7 +820,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -897,7 +827,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -910,7 +839,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -918,7 +846,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -926,7 +853,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -934,7 +860,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -942,7 +867,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -955,7 +879,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-height: 375px) and (device-width: 812px) and (orientation: Landscape) and (-webkit-device-pixel-ratio: 3) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -963,7 +886,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -971,7 +893,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -979,7 +900,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -987,7 +907,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1000,7 +919,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: Portrait) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1008,7 +926,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1016,7 +933,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1024,7 +940,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1032,7 +947,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1045,7 +959,6 @@ input:checked+.slider:before {
 
 @media only screen and (device-height: 320px) and (device-width: 568px) and (orientation: Landscape) {
   .transition_wrap section:nth-of-type(1) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1053,7 +966,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(2) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1061,7 +973,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(3) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1069,7 +980,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(4) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;
@@ -1077,7 +987,6 @@ input:checked+.slider:before {
     background-repeat: no-repeat;
   }
   .transition_wrap section:nth-of-type(5) {
-    background-color: var(--primary-color);
     background-image: var(--mobile-bg);
     background-size: cover;
     background-attachment: fixed;

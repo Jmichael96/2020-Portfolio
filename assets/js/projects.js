@@ -124,7 +124,7 @@ function renderProject(item) {
                 <div key="${item.id}" class="outer-card">
                   <div id="card3" class="projectCard">
                     <div class="card__image-container">
-                      <img id="img" class="card__image" src="./assets/images/projects/${item.imageName}" alt="" />
+                      <img id="img" class="card__image" src="./assets/images/projects/${item.imageName}" alt="${item.name}" />
                     </div>
         
                     <svg class="card__svg" viewBox="0 0 800 800">
@@ -139,7 +139,7 @@ function renderProject(item) {
                     <div class="card__content">
                       <h3 class="card__title">${item.name}</h3>
                       <div class="buttons">
-                        <a target="_blank" href="${item.link}">
+                        <a target="_blank" rel="noreferrer" href="${item.link}">
                           <button class="btn-1"><span class="btn-span">Link</span></button>
                         </a>
                       </div>
