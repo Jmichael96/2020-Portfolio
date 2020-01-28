@@ -12,7 +12,7 @@
     --search-btn-color: white;
     --search-btn-bg: #004761;
     --search-btn-focus1: black;
-    --search-btn-focus2: rgb(78, 78, 78);;
+    --search-btn-focus2: rgb(78, 78, 78);
     --line-fade-in1: white;
     --line-fade-in2: #00b4e6;
     --proj-num-color: white;
@@ -22,7 +22,7 @@
 
 [data-theme="dark"] {
     --outer-card: rgba(255, 255, 255, 0);
-    --card-shadow:black;
+    --card-shadow: black;
     --card-background: black;
     --card-title: white;
     --card-btn-line: #a236c9;

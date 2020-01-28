@@ -2,6 +2,10 @@
     --name-color: rgba(0, 0, 0, 0);
     --solid-color: black;
     --gradient-bg: #808080;
+    --stroke1: #004761;
+    --stroke2: #004761;
+    --stroke3: black;
+    --text-copy-fill: rgba(0, 0, 0, 0.048);
 }
 
 /* dark theme css variables */
@@ -10,6 +14,62 @@
     --name-color: rgba(0, 0, 0, 0);
     --solid-color: white;
     --gradient-bg: #292929;
+    --stroke1: #a236c9;
+    --stroke2: #a236c9;
+    --stroke3: black;
+    --text-copy-fill: black;
+}
+
+/* name title svg */
+
+svg {
+    display: block;
+    font: 10.5em 'Montserrat';
+    width: 1190px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 180px
+}
+
+.text-copy {
+    fill: var(--text-copy-fill);
+    stroke: white;
+    stroke-dasharray: 7% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 8s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: var(--stroke3);
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: var(--stroke2);
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: var(--stroke2);
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: var(--stroke2);
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: var(--stroke3);
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
 }
 
 /* my name in landing page */

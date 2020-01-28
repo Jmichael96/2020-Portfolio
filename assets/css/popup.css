@@ -12,7 +12,6 @@
     animation-delay: 1.5s
 }
 
-
 @-webkit-keyframes backnforth {
     0% {
         transform: rotate(0);

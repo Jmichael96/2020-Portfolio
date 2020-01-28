@@ -120,17 +120,17 @@ function checkRightBtn() {
     case 3:
       leftBtn.style.display = 'block';
       leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" /> Projects'
-      rightBtnText.innerHTML = 'Contact  <img id="rightImage" src="./assets/images/giphy.gif" />'
+      rightBtnText.innerHTML = 'Services  <img id="rightImage" src="./assets/images/giphy.gif" />'
       break;
     case 4:
       rightBtn.style.display = 'block';
       leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" /> About'
-      rightBtnText.innerHTML = 'Services  <img id="rightImage" src="./assets/images/giphy.gif" />'
+      rightBtnText.innerHTML = 'Contact  <img id="rightImage" src="./assets/images/giphy.gif" />'
       break;
     case 5:
       leftBtn.style.display = 'block';
       rightBtn.style.display = 'none';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" /> Contact'
+      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" /> Services'
       break;
     default:
       return;
@@ -156,17 +156,17 @@ function checkLeftBtn() {
     case 3:
       leftBtn.style.display = 'block';
       leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" /> Projects'
-      rightBtnText.innerHTML = 'Contact  <img id="rightImage" src="./assets/images/giphy.gif" />'
+      rightBtnText.innerHTML = 'Services  <img id="rightImage" src="./assets/images/giphy.gif" />'
       break;
     case 4:
       rightBtn.style.display = 'block';
       leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" /> About'
-      rightBtnText.innerHTML = 'Services  <img id="rightImage" src="./assets/images/giphy.gif" />'
+      rightBtnText.innerHTML = 'Contact  <img id="rightImage" src="./assets/images/giphy.gif" />'
       break;
     case 5:
       leftBtn.style.display = 'block';
       rightBtn.style.display = 'none';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" /> Contact'
+      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" /> Services'
       break;
     default:
       return;

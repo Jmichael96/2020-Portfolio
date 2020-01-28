@@ -166,6 +166,7 @@ label {
     -o-transition: color 0.5s ease-out;
     transition: color 0.5s ease-out;
     outline: none;
+    z-index: 10;
 }
 
 .icon:hover {

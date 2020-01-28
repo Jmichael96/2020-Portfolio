@@ -75,6 +75,7 @@
 }
 
 /* animation for navigation buttons */
+
 @-webkit-keyframes shakey {
     0% {
         transform: rotate(0);
@@ -104,6 +105,7 @@
         transform: rotate(0);
     }
 }
+
 @keyframes shakey {
     0% {
         transform: rotate(0);
@@ -133,7 +135,6 @@
         transform: rotate(0);
     }
 }
-
 
 /* iPhone 11  [Portrait] */
 
@@ -231,7 +232,6 @@
     }
 }
 
-
 /* iPhone XR [Portrait] */
 
 @media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {
@@ -241,6 +241,7 @@
         right: calc(-58vw + 90%);
     }
 }
+
 /* iPhone XR [Landscape] */
 
 @media only screen and (device-height: 414px) and (device-width: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 2) {

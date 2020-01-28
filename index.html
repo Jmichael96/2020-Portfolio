@@ -59,7 +59,14 @@
 </head>
 
 <body>
-  <noscript>Please enable javascript to ensure this website runs smoothly</noscript>
+  <noscript>
+    <h2 id="noScriptMessage">Javascript is disabled in your web browser. Some features will not work properly.</h2>
+    <style type="text/css">
+      .transition_wrap {
+        display: none;
+      }
+    </style>
+  </noscript>
   <div class="transition_wrap">
     <div id="progressBar"></div>
     <div class="part_wrap">
@@ -92,7 +99,19 @@
           </label>
         </div>
       </nav>
-      <h3 id="nameTitle">Jeffrey VanHorn</h3>
+      <svg viewBox="0 0 1960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">Jeffrey VanHorn</text>
+        </symbol>
+        <g class = "g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+      <!-- <h3 id="nameTitle">Jeffrey VanHorn</h3> -->
       <h5 id="subTitle">Full Stack Dev</h5>
     </section>
     <!-- PROJECT SECTION -->
@@ -209,44 +228,7 @@
         </div>
       </div>
     </section>
-    <!-- CONTACT SECTION -->
-    <section id="contact_wrap" class="container-fluid" data-transition="split_diagonal_alt">
-      <div class="row d-flex justify-content-center">
-        <div class="iphone">
-          <img class="iphone-frame" alt="iphone frame" src="./assets/images/iphonex.png">
-          <div class="iphone-viewport">
-          </div>
-          <div id="contactMeText">
-            <h3>Contact Me!</h3>
-          </div>
-          <form id="contactForm" action="./php/mail.php" method="post" class="iphone-content">
-            <div class="form-group">
-              <label class="formLabel" for="name">Name</label>
-              <input id="name" name="name" type="text" />
-            </div>
-            <div class="form-group">
-              <label class="formLabel" for="email">Email</label>
-              <input id="email" name="email" />
-            </div>
-            <div class="form-group">
-              <label class="formLabel" for="message">Message</label>
-              <textarea id="message" name="message" rows="3"></textarea>
-            </div>
-            <button type="submit" class="btn-1"><span class="btn-span">Submit</span></button>
-          </form>
-          <div id="icon_wrap">
-            <a class="icon" href="https://github.com/Jmichael96"><i class="fab fa-github fa-2x"></i></a>
-            <a class="icon" href="https://www.linkedin.com/in/jvh96/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a class="icon" href="https://www.facebook.com/JVHWebDevelopment/?modal=admin_todo_tour"><i
-                class="fab fa-facebook fa-2x"></i></a>
-          </div>
-          <div id="email_wrap">
-            <a id="email_text" onclick="showEmail();">Click to show email</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SKILL SECTION -->
+    <!-- SERVICES SECTION -->
     <section id="skill_wrap" data-transition="split_diagonal_alt">
       <div class="container">
         <div class="row justify-content-center">
@@ -255,7 +237,7 @@
             <div class="serviceCard">
               <div class="container">
                 <div class="row">
-                    <img src="./assets/images/laptop.jpeg" class="serviceImg" alt="computer" />
+                  <img src="./assets/images/laptop.jpeg" class="serviceImg" alt="computer" />
                   <div class="col-12 lowerContent">
                     <h4 class="serviceTitle">Web Development</h4>
                     <hr class="serviceDivider" />
@@ -285,7 +267,7 @@
             <div class="serviceCard">
               <div class="container">
                 <div class="row">
-                    <img src="./assets/images/devices.png" class="serviceImg" alt="computer" />
+                  <img src="./assets/images/devices.png" class="serviceImg" alt="computer" />
                   <div class="col-12 lowerContent">
                     <h4 class="serviceTitle">Web Design</h4>
                     <hr class="serviceDivider" />
@@ -308,6 +290,44 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact_wrap" class="container-fluid" data-transition="split_diagonal_alt">
+      <div class="row d-flex justify-content-center">
+        <div class="iphone">
+          <img class="iphone-frame" alt="iphone frame" src="./assets/images/iphonex.png">
+          <div class="iphone-viewport">
+          </div>
+          <div id="contactMeText">
+            <h3>Contact Me!</h3>
+          </div>
+          <form id="contactForm" action="./php/sendMail.php" method="post" class="iphone-content">
+            <div class="form-group">
+              <label class="formLabel" for="name">Name</label>
+              <input id="name" name="name" type="text" />
+            </div>
+            <div class="form-group">
+              <label class="formLabel" for="email">Email</label>
+              <input id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label class="formLabel" for="message">Message</label>
+              <textarea id="message" name="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-1"><span class="btn-span">Submit</span></button>
+          </form>
+          <div id="icon_wrap">
+            <a class="icon" href="https://github.com/Jmichael96"><i class="fab fa-github fa-2x"></i></a>
+            <a class="icon" href="https://www.linkedin.com/in/jvh96/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a class="icon" href="https://www.facebook.com/JVHWebDevelopment/?modal=admin_todo_tour"><i
+                class="fab fa-facebook fa-2x"></i></a>
+          </div>
+          <div id="email_wrap">
+            <a id="email_text" onclick="showEmail();">Click to show email</a>
           </div>
         </div>
       </div>
