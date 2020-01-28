@@ -111,7 +111,7 @@ svg {
 /* iPad Pro 12.9 inch - 1024 x 1366 [Portrait] */
 
 @media only screen and (device-width: 1024px) and (device-height: 1366px) and (orientation: Portrait) and (-webkit-min-device-pixel-ratio: 1) {
-    svg {
+    /* svg {
         display: block;
         font: 10.5em 'Montserrat';
         width: 1190px;
@@ -120,6 +120,7 @@ svg {
         margin-right: auto;
         margin-top: 180px
     }
+*/
 }
 
 /* iPad Pro 12.9 inch - 1366 x 1024 [Landscape] */

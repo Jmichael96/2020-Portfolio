@@ -194,10 +194,17 @@ function showEmail() {
 
 function updateSVG() {
   let svg = document.getElementById('svg');
-  let innerWidth = window.innerWidth;
-  let innerHeight = window.innerHeight;
+  let innerWidth = window.innerWidth * 2 ;
 
   svg.setAttribute('viewBox', `0 0 ${innerWidth} 300`);
   console.log('svg set at ' + innerWidth)
 }
-// updateSVG();
+updateSVG();
+
+// if screen changes
+window.addEventListener('resize', function () {
+  let screenWidth = window.innerWidth;
+  let screenHeight = window.innerHeight;
+  document.getElementById('timeline').style.setProperty('width', `${screenWidth}px`);
+  document.getElementById('timeline').style.setProperty('height', `${screenHeight}px`);
+}, true);
