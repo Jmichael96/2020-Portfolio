@@ -435,7 +435,7 @@
     left: -15px;
   }
   .timeline::before {
-    height: 200%;
+    height: 220%;
   }
 }
 
@@ -443,7 +443,7 @@
 
 @media only screen and (device-height: 414px) and (device-width: 736px) and (orientation: Landscape)and (-webkit-device-pixel-ratio: 3) {
   .timeline::before {
-    height: 490%;
+    height: 480%;
   }
 }
 

@@ -2,7 +2,7 @@ let slide_time = 1200; // The time it takes to complete an entire transition
 let change_point = slide_time / 2; // Calculates when the slide should change
 let right_arrow = $('.navigation_right'); // Element that trigger move right
 let left_arrow = $('.navigation_left'); // Element that trigger move left
-let slide_amount = $('.transition_wrap section').length; // How many slides
+let slide_amount = $('#transition_wrap section').length; // How many slides
 let current_slide = 1; // Starting slide
 let on = 1;
 
@@ -197,10 +197,10 @@ function setSVG() {
   let svg = document.getElementById('svg');
 
   if (windowWidth === 1920) {
-    svg.setAttribute('viewBox', '0 0 1920 300')
+    svg.setAttribute('viewBox', '0 0 2520 300')
   }
   else if (windowWidth === 1600) {
-    svg.setAttribute('viewBox', '0 0 1920 300')
+    svg.setAttribute('viewBox', '0 0 2520 300')
   }
   else if (windowWidth === 768) {
     svg.setAttribute('viewBox', '0 0 1320 300')
@@ -211,3 +211,8 @@ function setSVG() {
 }
 
 setSVG();
+
+// Tooltips Initialization
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

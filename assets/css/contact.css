@@ -153,14 +153,14 @@ label {
 
 #icon_wrap {
     top: 66%;
-    left: 28%;
+    left: 26%;
     position: absolute;
 }
 
 /* outer style of icon */
 
 .icon {
-    margin-left: 35px;
+    margin: 0 15px 15px;
     color: var(--icon-color);
     -webkit-transition: color 0.5s ease-out;
     -o-transition: color 0.5s ease-out;
@@ -206,6 +206,46 @@ label {
         width: 337px;
         text-align: center;
     }
+    /* iphone  */
+    .iphone {
+        height: 670px;
+        -webkit-transform: translateY(0%);
+        transform: translateY(0%);
+    }
+    .iphone-frame {
+        width: 495px;
+    }
+    /* 'contact me!' text on top of iphone */
+    #contactMeText {
+        top: 7%;
+        left: 17%;
+    }
+    /* inputs */
+    #name {
+        width: 310px;
+    }
+    #email {
+        width: 310px;
+    }
+    #message {
+        width: 310px;
+    }
+    /* contact form inputs and button */
+    #contactForm {
+        top: 15%;
+        left: 19%;
+        position: absolute;
+    }
+    /* wrap for icons */
+    #icon_wrap {
+        top: 66%;
+        left: 24%;
+    }
+    /* email text wrap */
+    #email_wrap {
+        top: 73%;
+        left: 17%;
+    }
 }
 
 /* iPhone 6,7 & 8 [Portrait] */
@@ -224,6 +264,42 @@ label {
         width: 337px;
         text-align: center;
     }
+    /* iphone  */
+    .iphone {
+        height: 670px;
+        -webkit-transform: translateY(3%);
+        transform: translateY(3%);
+    }
+    /* 'contact me!' text on top of iphone */
+    #contactMeText {
+        top: 9%;
+        left: 13%;
+    }
+    /* inputs */
+    #name {
+        width: 278px;
+    }
+    #email {
+        width: 278px;
+    }
+    #message {
+        width: 278px;
+    }
+    /* contact form inputs and button */
+    #contactForm {
+        top: 15%;
+        left: 19%;
+        position: absolute;
+    }
+    /* wrap for icons */
+    #icon_wrap {
+        left: 24%;
+    }
+    /* email text wrap */
+    #email_wrap {
+        top: 74%;
+        left: 13%;
+    }
 }
 
 /* iPhone 6,7 & 8 [Landscape] */
@@ -233,26 +309,161 @@ label {
 /* iPhone XS Max [Portrait] */
 
 @media only screen and (device-width: 414px) and (device-height: 896px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* section wrapping contact */
     #contact_wrap {
         position: relative;
         overflow: hidden;
+    }
+    /* email text wrap */
+    #email_wrap {
+        position: absolute;
+        top: 72%;
+        left: 19%;
+        width: 337px;
+        text-align: center;
+    }
+    /* iphone  */
+    .iphone {
+        height: 670px;
+        -webkit-transform: translateY(3%);
+        transform: translateY(3%);
+    }
+    /* 'contact me!' text on top of iphone */
+    #contactMeText {
+        top: 9%;
+        left: 13%;
+    }
+    /* inputs */
+    #name {
+        width: 278px;
+    }
+    #email {
+        width: 278px;
+    }
+    #message {
+        width: 278px;
+    }
+    /* contact form inputs and button */
+    #contactForm {
+        top: 15%;
+        left: 19%;
+        position: absolute;
+    }
+    /* wrap for icons */
+    #icon_wrap {
+        left: 24%;
+    }
+    /* email text wrap */
+    #email_wrap {
+        top: 74%;
+        left: 13%;
     }
 }
 
 /* iPhone x [Portrait] */
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: Portrait) and (-webkit-device-pixel-ratio: 3) {
+    /* section wrapping contact */
     #contact_wrap {
         position: relative;
         overflow: hidden;
+    }
+    /* email text wrap */
+    #email_wrap {
+        position: absolute;
+        top: 72%;
+        left: 19%;
+        width: 337px;
+        text-align: center;
+    }
+    /* iphone  */
+    .iphone {
+        height: 670px;
+        -webkit-transform: translateY(3%);
+        transform: translateY(3%);
+    }
+    /* 'contact me!' text on top of iphone */
+    #contactMeText {
+        top: 9%;
+        left: 13%;
+    }
+    /* inputs */
+    #name {
+        width: 278px;
+    }
+    #email {
+        width: 278px;
+    }
+    #message {
+        width: 278px;
+    }
+    /* contact form inputs and button */
+    #contactForm {
+        top: 15%;
+        left: 19%;
+        position: absolute;
+    }
+    /* wrap for icons */
+    #icon_wrap {
+        left: 24%;
+    }
+    /* email text wrap */
+    #email_wrap {
+        top: 74%;
+        left: 13%;
     }
 }
 
 /* iPhone 5, 5S, SE [Portrait] */
 
 @media only screen and (device-width: 320px) and (device-height: 568px) and (orientation: Portrait) {
+    /* section wrapping contact */
     #contact_wrap {
         position: relative;
         overflow: hidden;
+    }
+    /* email text wrap */
+    #email_wrap {
+        position: absolute;
+        top: 72%;
+        left: 19%;
+        width: 337px;
+        text-align: center;
+    }
+    /* iphone  */
+    .iphone {
+        height: 670px;
+        -webkit-transform: translateY(3%);
+        transform: translateY(3%);
+    }
+    /* 'contact me!' text on top of iphone */
+    #contactMeText {
+        top: 9%;
+        left: 13%;
+    }
+    /* inputs */
+    #name {
+        width: 278px;
+    }
+    #email {
+        width: 278px;
+    }
+    #message {
+        width: 278px;
+    }
+    /* contact form inputs and button */
+    #contactForm {
+        top: 15%;
+        left: 19%;
+        position: absolute;
+    }
+    /* wrap for icons */
+    #icon_wrap {
+        left: 24%;
+    }
+    /* email text wrap */
+    #email_wrap {
+        top: 74%;
+        left: 13%;
     }
 }

@@ -8,8 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Jeffrey VanHorn" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <meta name="theme-color" content="#424242">
   <title>Jeffrey VanHorn</title>
+  <meta name="theme-color" content="black">
+  <meta name="msapplication-navbutton-color" content="black">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
   <!-- Schema.org markup for Google+ -->
   <meta itemprop="name" content="VanHorn Web Design">
@@ -66,12 +69,12 @@
   <noscript>
     <h2 id="noScriptMessage">Javascript is disabled in your web browser. Some features will not work properly.</h2>
     <style type="text/css">
-      .transition_wrap {
+      #transition_wrap {
         display: none;
       }
     </style>
   </noscript>
-  <div class="transition_wrap">
+  <div id="transition_wrap">
     <div id="progressBar"></div>
     <div class="part_wrap">
       <div class="div part-1 none"></div>
@@ -94,7 +97,7 @@
     </div>
     <!-- LANDING SECTION -->
     <section class="active_slide" data-transition="split_diagonal_alt">
-      <nav>
+      <nav id="theme_nav">
         <div class="theme-switch-wrapper">
           <span id="popup" class="align-middle"> </span>
           <label class="theme-switch" for="checkbox">
@@ -307,7 +310,7 @@
           <div id="contactMeText">
             <h3>Contact Me!</h3>
           </div>
-          <form id="contactForm" action="./php/sendMail.php" method="post" class="iphone-content">
+          <form id="contactForm" action="./php/mail.php" method="post" class="iphone-content">
             <div class="form-group">
               <label class="formLabel" for="name">Name</label>
               <input id="name" name="name" type="text" />
@@ -323,9 +326,10 @@
             <button type="submit" class="btn-1"><span class="btn-span">Submit</span></button>
           </form>
           <div id="icon_wrap">
-            <a class="icon" href="https://github.com/Jmichael96"><i class="fab fa-github fa-2x"></i></a>
-            <a class="icon" href="https://www.linkedin.com/in/jvh96/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a class="icon" href="https://www.facebook.com/JVHWebDevelopment/?modal=admin_todo_tour"><i
+            <a class="icon" target="_blank" data-toggle="tooltip" title="Code Wars" href="https://www.codewars.com/users/JeffreyD196"><i class="fas fa-code fa-2x"></i></a>
+            <a class="icon" target="_blank" data-toggle="tooltip" title="Github" href="https://github.com/Jmichael96"><i class="fab fa-github fa-2x"></i></a>
+            <a class="icon" target="_blank" data-toggle="tooltip" title="LinkedIn" href="https://www.linkedin.com/in/jvh96/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a class="icon" target="_blank" data-toggle="tooltip" title="Facebook" href="https://www.facebook.com/JVHWebDevelopment/?modal=admin_todo_tour"><i
                 class="fab fa-facebook fa-2x"></i></a>
           </div>
           <div id="email_wrap">

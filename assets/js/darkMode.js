@@ -20,4 +20,14 @@ function switchTheme(e) {
     }    
 }
 
+function checkMobile() {
+    if (window.innerWidth <= 1024) {
+        document.getElementById('theme_nav').style.display = 'none';
+        console.log('Switching to dark mode cause yo screen too small');
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+checkMobile();
 toggleSwitch.addEventListener('change', switchTheme, false);
