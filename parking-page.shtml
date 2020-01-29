@@ -3,33 +3,35 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="Portfolio design showing off the skills I pertain" />
+  <meta name="description" content="Jeffrey VanHorn's portfolio! Currently available for a full time position" />
   <meta name="keywords" content="web-design websites portfolio developer" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Jeffrey VanHorn" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="theme-color" content="#424242">
   <title>Jeffrey VanHorn</title>
+
   <!-- Schema.org markup for Google+ -->
-  <!-- <meta itemprop="name" content="VanHorn Web Design">
-    <meta itemprop="description" content="Portfolio design showing off the skills I pertain">
-    <meta itemprop="image" content="./assets/images/logo/blue-logo.png"> -->
+  <meta itemprop="name" content="VanHorn Web Design">
+  <meta itemprop="description" content="Jeffrey VanHorn's portfolio! Currently available for a full time position">
+  <meta itemprop="image" content="./assets/images/favicon.png">
 
   <!-- Twitter Card data -->
-  <!-- <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="https://codevh.com">
-    <meta name="twitter:title" content="VanHorn Web Design">
-    <meta name="twitter:description" content="Portfolio design showing off the skills I pertain">
-    <meta name="twitter:creator" content="Jeffrey VanHorn"> -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="https://codevh.com">
+  <meta name="twitter:title" content="VanHorn Web Design">
+  <meta name="twitter:description" content="Jeffrey VanHorn's portfolio! Currently available for a full time position">
+  <meta name="twitter:creator" content="Jeffrey VanHorn">
+
   <!-- Twitter summary card with large image must be at least 280x150px -->
-  <!-- <meta name="twitter:image:src" content="./assets/images/logo/blue-logo.png"> -->
+  <meta name="twitter:image:src" content="./assets/images/favicon.png">
   <!-- Open Graph data -->
-  <!-- <meta property="og:title" content="VanHorn Web Design" />
-    <meta property="og:type" content="portfolio" />
-    <meta property="og:url" content="https://codevh.com" />
-    <meta property="og:image" content="./assets/images/logo/blue-logo.png" />
-    <meta property="og:description" content="Portfolio design showing off the skills I pertain" />
-    <meta property="og:site_name" content="vanHorn Web Design" /> -->
+  <meta property="og:title" content="VanHorn Web Design" />
+  <meta property="og:type" content="portfolio" />
+  <meta property="og:url" content="https://codevh.com" />
+  <meta property="og:image" content="./assets/images/logo/favicon.png" />
+  <meta property="og:description" content="Jeffrey VanHorn's portfolio! Currently available for a full time position" />
+  <meta property="og:site_name" content="Code VH" />
 
   <!-- <link rel="shortcut icon" href="./assets/images/logos/blue-logo.png" type="image/x-icon"> -->
   <!-- Font Awesome -->
@@ -53,9 +55,11 @@
   <link rel="stylesheet" href="./assets/css/navigationBtns.css" />
   <!-- popup css file -->
   <link rel="stylesheet" href="./assets/css/popup.css" />
-
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
   <!-- Safari favicon -->
-  <!-- <link rel="apple-touch-icon" href="./assets/images/logo/blue-logo.png"> -->
+  <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+
 </head>
 
 <body>
@@ -103,7 +107,7 @@
         <symbol id="s-text">
           <text text-anchor="middle" x="50%" y="80%">Jeffrey VanHorn</text>
         </symbol>
-        <g class = "g-ants">
+        <g class="g-ants">
           <use xlink:href="#s-text" class="text-copy"></use>
           <use xlink:href="#s-text" class="text-copy"></use>
           <use xlink:href="#s-text" class="text-copy"></use>
@@ -218,10 +222,8 @@
             <div class="timeline-content">
               <div class="date">2020</div>
               <p class="timelineText" id="scrollthing">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa
-                ratione omnis alias cupiditate saepe atque totam aperiam sed nulla
-                voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias,
-                ullam.
+                While still freelancing, I have been working part-time as a Full Stack Developer for Meza Web Design and continuously 
+                pushing myself to expand my programming knowledge every day.
               </p>
             </div>
           </div>
