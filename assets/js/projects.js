@@ -85,7 +85,7 @@ const renderReactOnly = [
     {
         id: 5,
         name: 'Update With Cait',
-        link: 'updatewithcait.com',
+        link: 'https://updatewithcait.com',
         imageName: 'update_with_cait.png',
         techStack: ['React.Js', 'JavaScript', 'MongoDB', 'Bootstrap', 'CSS3', 'Node.Js', 'React-Quill'],
         client: true
@@ -122,9 +122,9 @@ function renderProject(item) {
     projectLocation.innerHTML = item.map(item => {
         return `
                 <div key="${item.id}" class="outer-card">
-                  <div id="card3" class="projectCard">
+                  <div class="projectCard">
                     <div class="card__image-container">
-                      <img id="img" class="card__image" src="./assets/images/projects/${item.imageName}" alt="${item.name}" />
+                      <img class="card__image img" src="./assets/images/projects/${item.imageName}" alt="${item.name}" />
                     </div>
         
                     <svg class="card__svg" viewBox="0 0 800 800">
@@ -175,6 +175,7 @@ function removeSelectedClass() {
     document.getElementById('cssBtn').classList.remove('selectedBtn');
     document.getElementById('bootstrapBtn').classList.remove('selectedBtn');
     document.getElementById('allProjectsBtn').classList.remove('selectedBtn');
+    document.getElementById('materializeBtn').classList.remove('selectedBtn');
     document.getElementById('materialUIBtn').classList.remove('selectedBtn');
     document.getElementById('mongoBtn').classList.remove('selectedBtn');
     document.getElementById('mysqlBtn').classList.remove('selectedBtn');

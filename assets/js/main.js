@@ -9,7 +9,7 @@ let on = 1;
 // for popup to select darkmode 
 window.onload = function () {
   let popup = document.getElementById('popup');
-  popup.innerHTML = 'Toggle for dark mode! <img id="rightImage" src="./assets/images/giphy.gif" />';
+  popup.innerHTML = 'Toggle for dark mode! <img class="rightImage" src="./assets/images/giphy.gif" />';
   this.setTimeout(() => {
     popup.style.opacity = '0';
   }, 5000)
@@ -110,27 +110,27 @@ function checkRightBtn() {
   switch (current_slide) {
     case 1:
       leftBtn.style.display = 'none';
-      rightBtnText.innerHTML = 'Projects  <img id="rightImage" alt="arrow" src="./assets/images/giphy.gif" />';
+      rightBtnText.innerHTML = 'Projects  <img class="rightImage" alt="arrow" src="./assets/images/giphy.gif" />';
       break;
     case 2:
       leftBtn.style.display = 'block';
-      rightBtnText.innerHTML = 'About  <img id="rightImage" alt="arrow" src="./assets/images/giphy.gif" />'
-      leftBtnText.innerHTML = '<img id="leftImage" alt="arrow" src="./assets/images/giphy.gif" /> Home'
+      rightBtnText.innerHTML = 'About  <img class="rightImage" alt="arrow" src="./assets/images/giphy.gif" />'
+      leftBtnText.innerHTML = '<img class="leftImage" alt="arrow" src="./assets/images/giphy.gif" /> Home'
       break;
     case 3:
       leftBtn.style.display = 'block';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Projects'
-      rightBtnText.innerHTML = 'Services  <img id="rightImage" alt="arrow" src="./assets/images/giphy.gif" />'
+      leftBtnText.innerHTML = '<img class="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Projects'
+      rightBtnText.innerHTML = 'Services  <img class="rightImage" alt="arrow" src="./assets/images/giphy.gif" />'
       break;
     case 4:
       rightBtn.style.display = 'block';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> About'
-      rightBtnText.innerHTML = 'Contact  <img id="rightImage" src="./assets/images/giphy.gif" alt="arrow" />'
+      leftBtnText.innerHTML = '<img class="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> About'
+      rightBtnText.innerHTML = 'Contact  <img class="rightImage" src="./assets/images/giphy.gif" alt="arrow" />'
       break;
     case 5:
       leftBtn.style.display = 'block';
       rightBtn.style.display = 'none';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Services'
+      leftBtnText.innerHTML = '<img class="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Services'
       break;
     default:
       return;
@@ -146,27 +146,27 @@ function checkLeftBtn() {
   switch (current_slide) {
     case 1:
       leftBtn.style.display = 'none';
-      rightBtnText.innerHTML = 'Projects  <img id="rightImage" src="./assets/images/giphy.gif" alt="arrow" />';
+      rightBtnText.innerHTML = 'Projects  <img class="rightImage" src="./assets/images/giphy.gif" alt="arrow" />';
       break;
     case 2:
-      rightBtnText.innerHTML = 'About  <img id="rightImage" src="./assets/images/giphy.gif" alt="arrow" />'
+      rightBtnText.innerHTML = 'About  <img class="rightImage" src="./assets/images/giphy.gif" alt="arrow" />'
       leftBtn.style.display = 'block';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Home'
+      leftBtnText.innerHTML = '<img class="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Home'
       break;
     case 3:
       leftBtn.style.display = 'block';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Projects'
-      rightBtnText.innerHTML = 'Services  <img id="rightImage" src="./assets/images/giphy.gif"alt="arrow"  />'
+      leftBtnText.innerHTML = '<img class="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Projects'
+      rightBtnText.innerHTML = 'Services  <img class="rightImage" src="./assets/images/giphy.gif"alt="arrow"  />'
       break;
     case 4:
       rightBtn.style.display = 'block';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif"alt="arrow"  /> About'
-      rightBtnText.innerHTML = 'Contact  <img id="rightImage" src="./assets/images/giphy.gif" alt="arrow" />'
+      leftBtnText.innerHTML = '<img class="leftImage" src="./assets/images/giphy.gif"alt="arrow"  /> About'
+      rightBtnText.innerHTML = 'Contact  <img class="rightImage" src="./assets/images/giphy.gif" alt="arrow" />'
       break;
     case 5:
       leftBtn.style.display = 'block';
       rightBtn.style.display = 'none';
-      leftBtnText.innerHTML = '<img id="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Services'
+      leftBtnText.innerHTML = '<img class="leftImage" src="./assets/images/giphy.gif" alt="arrow" /> Services'
       break;
     default:
       return;
@@ -177,7 +177,7 @@ function checkLeftBtn() {
 function checkPage() {
   if (current_slide === 1) {
     document.getElementById('leftBtn').style.display = 'none';
-    document.getElementById('rightBtnText').innerHTML = 'Projects  <img id="rightImage" alt="arrow" src="./assets/images/giphy.gif" />';
+    document.getElementById('rightBtnText').innerHTML = 'Projects  <img class="rightImage" alt="arrow" src="./assets/images/giphy.gif" />';
   }
   else if (current_slide === 5) {
     document.getElementById('rightBtn').style.display = 'none';

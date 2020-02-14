@@ -2,7 +2,7 @@
 
 if (isset($_POST['submit'])) {
     $mail_to_send_to = "vh.webdesign19@gmail.com, jeffrey.vanhorn@yhaoo.com";
-    $from_email = "jvh@codevh.com";
+    $from_email = "admin@codevh.com";
     // name
     $name = $_POST['name'];
     // email
@@ -37,10 +37,12 @@ if (isset($_POST['submit'])) {
         $mailObject = mail($mail_to_send_to, "Your website is calling Mr. Dahmer", $body, $headers);
 
         if ($mailObject) {
-            header('Location: ../thankYou.html');
+            print('Your message was successfully sent!');
+            // header('Location: ../thankYou.html');
         } else {
             print("Message wasn't sent, please try again later");
         }
     }
 
 }
+?>

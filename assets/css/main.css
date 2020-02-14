@@ -59,7 +59,7 @@ body {
 #progressBar {
   position: relative;
   width: 0;
-  height: 3px;
+  height: 4px;
   background-color: var(--progress-bar);
   -webkit-transition: width 1.5s ease-in-out;
   -o-transition: width 1.5s ease-in-out;

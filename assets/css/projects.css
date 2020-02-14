@@ -49,7 +49,7 @@
 
 /* image background for cards */
 
-#img {
+.img {
     max-width: 100%;
     min-width: 100%;
     height: 280px;
@@ -61,7 +61,7 @@
     width: 320px;
     height: 26rem;
     background: var(--outer-card);
-    margin: 10px 10px;
+    margin: 28px 10px;
 }
 
 .projectCard {

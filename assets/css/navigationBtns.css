@@ -44,7 +44,7 @@
     transform-origin: top bottom;
 }
 
-#leftImage {
+.leftImage {
     height: 28px;
     transform: rotate(-90deg);
 }
@@ -69,7 +69,7 @@
     transform-origin: top bottom;
 }
 
-#rightImage {
+.rightImage {
     height: 28px;
     transform: rotate(90deg);
 }
