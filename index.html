@@ -59,7 +59,7 @@
   <!-- popup css file -->
   <link rel="stylesheet" href="./assets/css/popup.css" />
   <!-- favicon -->
-  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png" />
   <!-- Safari favicon -->
   <link rel="apple-touch-icon" href="./assets/images/favicon.png">
 
@@ -156,11 +156,14 @@
           <button class="btn-2 searchBtns" id="funProjects" onclick="searchProjects(false);"><span
               class="btn2-span">Side
               Projects</span></button>
+          <button class="btn-2 searchBtns" id="mezaWD" onclick="searchProjects('mwd');"><span
+              class="btn2-span">Meza Web Design</span></button>
         </div>
         <div class="row justify-content-center">
           <p id="renderProjectNumber"></p>
         </div>
         <div id="renderProject" class="row justify-content-center"></div>
+        <div class="blank_space"></div>
       </div>
     </section>
     <!-- TIMELINE SECTION -->
@@ -225,12 +228,14 @@
             <div class="timeline-content">
               <div class="date">2020</div>
               <p class="timelineText" id="scrollthing">
-                While still freelancing, I have been working part-time as a Full Stack Developer for Meza Web Design and continuously 
+                While still freelancing, I have been working part-time as a Full Stack Developer for Meza Web Design and
+                continuously
                 pushing myself to expand my programming knowledge every day.
               </p>
             </div>
           </div>
         </div>
+        <div class="blank_space"></div>
       </div>
     </section>
     <!-- SERVICES SECTION -->
@@ -297,44 +302,55 @@
             </div>
           </div>
         </div>
+        <div class="blank_space"></div>
       </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section id="contact_wrap" class="container-fluid" data-transition="split_diagonal_alt">
       <div class="row d-flex justify-content-center">
-        <div class="iphone">
-          <img class="iphone-frame" alt="iphone frame" src="./assets/images/iphonex.png">
-          <div class="iphone-viewport">
-          </div>
-          <div id="contactMeText">
-            <h3>Contact Me!</h3>
-          </div>
-          <form id="contactForm" action="./php/mail.php" method="post" class="iphone-content">
+        <div id="contact-card">
+          <!-- Default form contact -->
+          <form class="text-center p-4" action="#!">
+
+            <h3 id="contactMeText" class="mb-4">Contact Me!</h3>
+
+            <!-- Name -->
+            <input type="text" id="name" name="name" class="form-control mb-4" placeholder="Name">
+
+            <!-- Email -->
+            <input type="email" id="email" name="email" class="form-control mb-4" placeholder="E-mail">
+
+            <!-- Message -->
             <div class="form-group">
-              <label class="formLabel" for="name">Name</label>
-              <input id="name" name="name" type="text" />
+              <textarea class="form-control rounded-0" name="message" id="exampleFormControlTextarea2" rows="3"
+                placeholder="Message"></textarea>
             </div>
-            <div class="form-group">
-              <label class="formLabel" for="email">Email</label>
-              <input id="email" name="email" />
+
+            <div id="icon_wrap" class="py-3">
+              <div class="row d-flex justify-content-center">
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                  <a class="icon" target="_blank" data-toggle="tooltip" title="Code Wars"
+                    href="https://www.codewars.com/users/JeffreyD196"><i class="fas fa-code fa-2x"></i></a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                  <a class="icon" target="_blank" data-toggle="tooltip" title="Github"
+                    href="https://github.com/Jmichael96"><i class="fab fa-github fa-2x"></i></a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                  <a class="icon" target="_blank" data-toggle="tooltip" title="LinkedIn"
+                    href="https://www.linkedin.com/in/jvh96/"><i class="fab fa-linkedin fa-2x"></i></a>
+                </div>
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3">
+                  <a class="icon" target="_blank" data-toggle="tooltip" title="Facebook"
+                    href="https://www.facebook.com/JVHWebDevelopment/?modal=admin_todo_tour"><i
+                      class="fab fa-facebook fa-2x"></i></a>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label class="formLabel" for="message">Message</label>
-              <textarea id="message" name="message" rows="3"></textarea>
-            </div>
+            <!-- Send button -->
             <button type="submit" class="btn-1"><span class="btn-span">Submit</span></button>
           </form>
-          <div id="icon_wrap">
-            <a class="icon" target="_blank" data-toggle="tooltip" title="Code Wars" href="https://www.codewars.com/users/JeffreyD196"><i class="fas fa-code fa-2x"></i></a>
-            <a class="icon" target="_blank" data-toggle="tooltip" title="Github" href="https://github.com/Jmichael96"><i class="fab fa-github fa-2x"></i></a>
-            <a class="icon" target="_blank" data-toggle="tooltip" title="LinkedIn" href="https://www.linkedin.com/in/jvh96/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a class="icon" target="_blank" data-toggle="tooltip" title="Facebook" href="https://www.facebook.com/JVHWebDevelopment/?modal=admin_todo_tour"><i
-                class="fab fa-facebook fa-2x"></i></a>
-          </div>
-          <div id="email_wrap">
-            <a id="email_text" onclick="showEmail();">Click to show email</a>
-          </div>
         </div>
       </div>
     </section>

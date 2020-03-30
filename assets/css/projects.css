@@ -203,6 +203,7 @@
 .btn-span {
     display: block;
     padding: 5px 20px;
+    outline: none;
 }
 
 .btn-1::before, .btn-1::after {
@@ -384,6 +385,12 @@
     font-size: 22px;
     margin: 85px 0 15px 0;
     color: var(--proj-num-color);
+}
+
+/* blank div space to add more padding on bottom of page */
+
+.blank_space {
+    height: 140px;
 }
 
 @-webkit-keyframes mover {

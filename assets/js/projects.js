@@ -5,7 +5,8 @@ const projects = [
         link: 'updatewithcait.com',
         imageName: 'update_with_cait.png',
         techStack: ['React.Js', 'JavaScript', 'MongoDB', 'Bootstrap', 'CSS3', 'Node.Js', 'React-Quill'],
-        client: true
+        client: true,
+        for: 'me'
     },
     {
         id: 1,
@@ -13,7 +14,8 @@ const projects = [
         link: 'https://jays-ironworks.com',
         imageName: 'logo.png',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'PHP'],
-        client: true
+        client: true,
+        for: 'me'
     },
     {
         id: 2,
@@ -21,7 +23,8 @@ const projects = [
         link: 'https://jmichael96.github.io/Graphs/',
         imageName: 'graph.jpg',
         techStack: ['React.Js', 'GraphQL', 'Apollo', 'MaterialUI', 'Plotly.Js', 'CSS3'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 3,
@@ -29,7 +32,8 @@ const projects = [
         link: 'https://google-books96.herokuapp.com/',
         imageName: 'bookbg.jpg',
         techStack: ['React.Js', 'MongoDB', 'Bootstrap', 'Node.Js', 'CSS3'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 4,
@@ -37,7 +41,8 @@ const projects = [
         link: 'https://slithery-snake96.herokuapp.com/',
         imageName: 'snake.gif',
         techStack: ['HTML5', 'JavaScript', 'MongoDB', 'Bootstrap', 'CSS3', 'Node.Js'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ const projects = [
         link: 'https://jmichael96.github.io/RPS-MULTIPLAYER/',
         imageName: 'rock.jpg',
         techStack: ['HTML5', 'JavaScript', 'Firebase', 'Bootstrap', 'CSS3'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ const projects = [
         link: 'https://lit-wildwood-52008.herokuapp.com/',
         imageName: 'clickygame.gif',
         techStack: ['React.Js', 'Materialize', 'CSS3', 'JavaScript'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ const projects = [
         link: 'https://sequelized-burger-jvh.herokuapp.com/',
         imageName: 'sequelizeBurger.gif',
         techStack: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript', 'Node.Js', 'MySQL', 'Handlebars'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 9,
@@ -69,7 +77,8 @@ const projects = [
         link: 'https://jmichael96.github.io/Unit4-StarWarsRPG/',
         imageName: 'starwars.png',
         techStack: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 10,
@@ -77,8 +86,18 @@ const projects = [
         link: 'https://jmichael96.github.io/TriviaGame/',
         imageName: 'supercross.png',
         techStack: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
-        client: false
+        client: false,
+        for: 'me'
     },
+    {
+        id: 11,
+        name: 'Topline',
+        link: 'https://toplinedumpsters.com',
+        imageName: 'topline.jpeg',
+        techStack: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'PHP'],
+        client: true,
+        for: 'mwd'
+    }
 ];
 // for default projects to show first... may change later!
 const renderReactOnly = [
@@ -88,7 +107,8 @@ const renderReactOnly = [
         link: 'https://updatewithcait.com',
         imageName: 'update_with_cait.png',
         techStack: ['React.Js', 'JavaScript', 'MongoDB', 'Bootstrap', 'CSS3', 'Node.Js', 'React-Quill'],
-        client: true
+        client: true,
+        for: 'me'
     },
     {
         id: 2,
@@ -96,7 +116,8 @@ const renderReactOnly = [
         link: 'https://jmichael96.github.io/Graphs/',
         imageName: 'graph.jpg',
         techStack: ['React.Js', 'GraphQL', 'Apollo', 'MaterialUI', 'Plotly.Js', 'CSS3'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 3,
@@ -104,7 +125,8 @@ const renderReactOnly = [
         link: 'https://google-books96.herokuapp.com/',
         imageName: 'bookbg.jpg',
         techStack: ['React.Js', 'MongoDB', 'Bootstrap', 'Node.Js', 'CSS3'],
-        client: false
+        client: false,
+        for: 'me'
     },
     {
         id: 7,
@@ -112,7 +134,8 @@ const renderReactOnly = [
         link: 'https://lit-wildwood-52008.herokuapp.com/',
         imageName: 'clickygame.gif',
         techStack: ['React.Js', 'Materialize', 'CSS3', 'JavaScript'],
-        client: false
+        client: false,
+        for: 'me'
     },
 ]
 const projectLocation = document.getElementById('renderProject');
@@ -181,6 +204,7 @@ function removeSelectedClass() {
     document.getElementById('mysqlBtn').classList.remove('selectedBtn');
     document.getElementById('proWork').classList.remove('selectedBtn');
     document.getElementById('funProjects').classList.remove('selectedBtn');
+    document.getElementById('mezaWD').classList.remove('selectedBtn');
 }
 
 function searchProjects(searchName) {
@@ -289,6 +313,12 @@ function searchProjects(searchName) {
             document.getElementById('funProjects').className += ' selectedBtn';
             renderProject(filteredProjects);
             renderText(filteredProjects.length, 'Side Projects');
+            break;
+        case 'mwd':
+            renderLength.innerHTML = '';
+            document.getElementById('mezaWD').className += ' selectedBtn';
+            renderProject(filteredProjects);
+            renderText(filteredProjects.length, 'Meza Web Design');
             break;
         default:
             searchProjects('React.Js')
