@@ -1,5 +1,14 @@
 const projects = [
     {
+        id: 11,
+        name: 'Topline',
+        link: 'https://toplinedumpsters.com',
+        imageName: 'topline.jpeg',
+        techStack: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'PHP'],
+        client: true,
+        for: 'mwd'
+    },
+    {
         id: 5,
         name: 'Update With Cait',
         link: 'updatewithcait.com',
@@ -88,15 +97,6 @@ const projects = [
         techStack: ['HTML5', 'CSS3', 'Bootstrap', 'JavaScript'],
         client: false,
         for: 'me'
-    },
-    {
-        id: 11,
-        name: 'Topline',
-        link: 'https://toplinedumpsters.com',
-        imageName: 'topline.jpeg',
-        techStack: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'PHP'],
-        client: true,
-        for: 'mwd'
     }
 ];
 // for default projects to show first... may change later!
