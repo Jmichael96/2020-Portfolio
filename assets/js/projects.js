@@ -6,7 +6,7 @@ const projects = [
         imageName: 'topline.jpeg',
         techStack: ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap', 'PHP'],
         client: true,
-        for: 'mwd'
+        for: 'me'
     },
     {
         id: 5,
@@ -204,7 +204,7 @@ function removeSelectedClass() {
     document.getElementById('mysqlBtn').classList.remove('selectedBtn');
     document.getElementById('proWork').classList.remove('selectedBtn');
     document.getElementById('funProjects').classList.remove('selectedBtn');
-    document.getElementById('mezaWD').classList.remove('selectedBtn');
+    // document.getElementById('mezaWD').classList.remove('selectedBtn');
 }
 
 function searchProjects(searchName) {
@@ -314,12 +314,12 @@ function searchProjects(searchName) {
             renderProject(filteredProjects);
             renderText(filteredProjects.length, 'Side Projects');
             break;
-        case 'mwd':
-            renderLength.innerHTML = '';
-            document.getElementById('mezaWD').className += ' selectedBtn';
-            renderProject(filteredProjects);
-            renderText(filteredProjects.length, 'Meza Web Design');
-            break;
+        // case 'mwd':
+        //     renderLength.innerHTML = '';
+        //     document.getElementById('mezaWD').className += ' selectedBtn';
+        //     renderProject(filteredProjects);
+        //     renderText(filteredProjects.length, 'Meza Web Design');
+        //     break;
         default:
             searchProjects('React.Js')
             renderProject(renderReactOnly)
